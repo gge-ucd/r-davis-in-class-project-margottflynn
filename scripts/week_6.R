@@ -129,3 +129,4 @@ hindfoot_survey <- surveys_complete %>%
     geom_boxplot(alpha = 0.1) +
     geom_jitter(alpha = 0.3, mapping = aes(color = as.factor(plot_id)))
                 
+  #messed up pushing

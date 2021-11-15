@@ -18,7 +18,7 @@ gapminder_new <- gapminder %>% filter(year %in% c(2002, 2007)) %>%
 ggplot(gapminder_new) + facet_wrap(~ continent, scales = 'free') +
   geom_bar(aes(x = reorder(country, popDiff), y = popDiff),stat = 'identity') +
   labs(x = 'Country', y= 'Change in pop. 2002-2007') + 
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 45))
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 

@@ -6,3 +6,7 @@ ggplot(diamonds, aes(x = clarity, fill = cut)) +
   theme(axis.text.x = element_text(angle=70, vjust=0.5)) +
   scale_fill_viridis_d(option = "C") +
   theme_classic()
+
+ggplot(data = gapminder, aes(x = lifeExp, y = gdpPercap)) +
+  geom_point(aes(group = continent))
+
